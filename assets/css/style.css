@@ -19,6 +19,14 @@ html{
 3.Màu sắc
 4.Kiểu dáng(kiểu chữ, hình tròn, vuông ...)
 */
+.clear
+{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
 
 #main {
 
@@ -146,6 +154,7 @@ background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
     opacity: 0.6;/*Chu mo*/
 }
 
+/*ĐOạn văn*/
 #content .about-text{
 margin-top: 25px;
 font-size: 15px;
@@ -153,6 +162,122 @@ text-align: justify;/*Căn deu*/
 line-height: 1.4;/*Chieu cao cua moi hang TA thuowng la 1.4 va TV la 1.6*/
 }
 
+#content .members-list
+{
+ margin-top: 48 px;
+ /*overflow: hidden; /* day the tourn xg dong */
+}
+
+#content .member-item
+{
+   float: left;/*keo anh ve thang hang */ 
+   width: 33.33333%;
+   text-align: center; /* căn giữa*/
+   padding-bottom: 46px;
+}
+
+
+#content .member-name
+{
+    font-size: 15px;
+}
+
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;/*Bo goc anh */
+}
+/**Tour section*/
+
+.tour-section{
+    background: #000;
+}
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;/*Tat danh dau dau dong cua li*/
+}
+
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.tickets-list .sold-out{
+background-color: #f44336;
+color: #fff;
+padding: 3px 4px;
+margin-left: 16px;
+}
+
+.tickets-list .quantily{
+    float: right;/*sang phai*/
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;/*hinh tron*/
+    text-align: center;/*chu can giua*/
+    line-height: 24px;/*can giua tu tren xg duoi bang chieu cao cua chu*/
+    margin-top: -3px;
+}
+
+/*Places*/
+.places-list
+{
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+
+}
+.place-item
+{
+    float: left;
+    width: 33.333333%;/*Can deu*/
+    padding: 0px 8px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{/*di vao thi mo*/
+    opacity: 0.6 ;  /*Mo anh khi di vao*/
+}
+.place-body{
+    background-color: #fff;/*Than trang*/
+    padding: 16px;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;/*Chu Mong*/
+}
+.place-time{
+    margin-top: 15px;
+    color: #757575;/*Mau xam*/
+}
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.place-buy-btn{
+    color: #fff;
+    background-color: black;
+    text-decoration: none;/*bo gach chan*/
+    padding: 11px 16px;
+    display: inline-block;/*Tut o den xuonbg*/
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+
+/*Footer section*/
 #footer {
 
 }
@@ -177,4 +302,93 @@ line-height: 1.4;/*Chieu cao cua moi hang TA thuowng la 1.4 va TV la 1.6*/
     color: #fff;
     font-size: 20px;
     line-height: 46px;
+}
+
+
+/*Form mua ve*/
+.modal.open{
+    display: flex;
+}
+.modal{
+    position: fixed;/*Tương quan voi trinh duyet*/
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3); 
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-header{
+    background: #009668;
+    height: 130px;
+    display: flex;
+    align-items: center;/*Can giua chieu cao*/
+    justify-content: center;/*Can giua chieu ngang va doc*/
+    font-size: 30px;
+    color: #fff;
+}
+.modal-container{
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+}
+.modal-heading-icon{
+    margin-right: 15px;
+}
+
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;/*Day ve sat ben phai*/
+    top: 0;/*Day ve sat ben trai*/
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;/*di chuot vao co hinh ban tay*/
+    opacity: 0.8;/*Mo khi di vao*/
+}
+
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    font-size: 15px;
+    display: block;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;/*dai ra chiem da so chieu rong*/
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 24px
+}
+#buy-tickets:hover{
+    opacity: 0.9;
+}
+
+#buy-tickets {
+    background: #009668;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    padding: 18px;
+    text-transform: uppercase;/*Viet hoa*/
+    cursor: pointer; /*Ban tay di chuot*/
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;/*can pghaii*/
+}
+
+.modal-footer a{
+    color:#2196F3 ;
 }
