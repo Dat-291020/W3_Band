@@ -335,6 +335,7 @@ margin-left: 16px;
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
+    animation: modalFaceIn ease 0.5s;/* Bay tickest khi nhan vao Buy tickets*/
 }
 .modal-heading-icon{
     margin-right: 15px;
@@ -391,4 +392,16 @@ margin-left: 16px;
 
 .modal-footer a{
     color:#2196F3 ;
+}
+
+/*Tickets troi*/
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
