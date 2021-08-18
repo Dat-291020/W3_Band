@@ -497,8 +497,8 @@ color: rgba(0,0,0,0.6);
 /*Map sectioon*/
 .map-section-slider {
     width: 100%;
-    content:url(/assets/img/places/map.jpg);
     margin-top: 48px;
+    content: url(/assets/img/places/map.jpg);
 }
 /*Tickets troi*/
 @keyframes modalFaceIn {
