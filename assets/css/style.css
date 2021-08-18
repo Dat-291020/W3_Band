@@ -497,6 +497,7 @@ color: rgba(0,0,0,0.6);
 /*Map sectioon*/
 .map-section{
     width: 100%;
+    margin-top: 48px;
 }
 /*Tickets troi*/
 @keyframes modalFaceIn {
