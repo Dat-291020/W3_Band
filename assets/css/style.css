@@ -67,6 +67,9 @@ html{
 .mt-16{
     margin-top: 16px !important;
 }
+.mt-32{
+    margin-top: 32px !important;
+}
 .pull-right{
     float: right !important;
 }
@@ -79,6 +82,7 @@ html{
     left: 0px;
     right: 0px;
     z-index: 1;
+   /* overflow: hidden;/*An hien*/
 }
 
 #nav
@@ -269,7 +273,7 @@ margin-left: 16px;
 /*Places*/
 .places-list
 {
-    margin: 32px -8px 0;
+    margin: 16px -8px 0;
     padding-bottom: 48px;
 
 }
@@ -311,6 +315,7 @@ margin-left: 16px;
     padding: 11px 16px;
     display: inline-block;/*Tut o den xuonbg*/
     margin-top: 15px;
+    text-align: center;/*Chữ hiện trung tâm*/
 }
 
 .place-buy-btn:hover{
@@ -347,19 +352,33 @@ color: rgba(0,0,0,0.6);
 #nav .nav-arrow-down{
     font-size: 14px;
 }
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 
-
-
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
-    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header  .mobile-menu-btn:hover .menu-icon{
+    color: #000;
 }
 
 #header .search-btn:hover
 {
+    cursor: pointer;
     background-color: #f44336;
 }
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
