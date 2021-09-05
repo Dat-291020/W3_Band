@@ -149,7 +149,7 @@ list-style-type: none;
 position: relative;
 margin-top: 46px;
 padding-top: 50%;/*50% của chính nó*/
-background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
+background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content
@@ -170,6 +170,7 @@ background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
 {
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 3px #000 ;
 }
 #content {
 
@@ -316,6 +317,8 @@ margin-left: 16px;
     display: inline-block;/*Tut o den xuonbg*/
     margin-top: 15px;
     text-align: center;/*Chữ hiện trung tâm*/
+    appearance: none;/*bo di trang thai mac dinh cua trình duyêt trên safari*/
+    -webkit-appearance: none;
 }
 
 .place-buy-btn:hover{
@@ -488,6 +491,13 @@ color: rgba(0,0,0,0.6);
     width: 30px;
     display: inline-block;
 }
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+.contact-info a:hover{
+    opacity: 1;/*Mo khi nhan chuot*/
+}
 .contact-form{
     font-size: 15px;
 }
@@ -520,7 +530,7 @@ color: rgba(0,0,0,0.6);
 .map-section-slider {
     width: 100%;
     margin-top: 48px;
-    content: url(/assets/img/places/map.jpg);
+    content: url('../img/places/map.jpg');
 }
 /*Tickets troi*/
 @keyframes modalFaceIn {
